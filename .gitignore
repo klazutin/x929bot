@@ -89,3 +89,7 @@ ENV/
 .ropeproject
 
 config.py
+.DS_Store
+node_modules/
+test.js
+test.py
