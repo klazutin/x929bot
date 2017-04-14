@@ -116,7 +116,10 @@ class Bot():
     def update_loop(self):
         print('Bot update loop started')
         while True:
-            self.get_updates()
+            try:
+                self.get_updates()
+            except Exception as e:
+                print('Couldn\'t get updates: ', e)
 
 
 class Pleer():
